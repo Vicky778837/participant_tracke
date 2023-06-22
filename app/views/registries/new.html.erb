@@ -1,0 +1,22 @@
+<h1>New Registry</h1>
+
+<%= form_with model: @registry, url: registries_path, local: true do |form| %>
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :location %>
+    <%= form.text_field :location %>
+  </div>
+
+  <div class="field">
+    <%= form.label :state %>
+    <%= form.text_field :state %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit "Create Registry" %>
+  </div>
+<% end %>

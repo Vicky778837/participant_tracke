@@ -1,0 +1,29 @@
+<h1><%= @registry.name %> Participants</h1>
+
+<% @enrollments_by_coordinator.each do |coordinator, enrollments| %>
+  <h3><%= coordinator.name %></h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>Date of Birth</th>
+        <th>Date of Enrollment</th>
+        <th>Method of Contact</th>
+        <th>Remarks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% enrollments.each do |enrollment| %>
+        <tr>
+          <td><%= enrollment.participant.name %></td>
+          <td><%= enrollment.participant.gender %></td>
+          <td><%= enrollment.participant.date_of_birth %></td>
+          <td><%= enrollment.date_of_enrollment %></td>
+          <td><%= enrollment.method_of_contact %></td>
+          <td><%= enrollment.remarks %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% end %>

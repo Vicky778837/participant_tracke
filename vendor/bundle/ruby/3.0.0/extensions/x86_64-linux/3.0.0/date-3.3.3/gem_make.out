@@ -1,0 +1,21 @@
+current directory: /home/user/Desktop/ROR/participant_tracker/vendor/bundle/ruby/3.0.0/gems/date-3.3.3/ext/date
+/home/user/.rvm/rubies/ruby-3.0.0/bin/ruby -I /home/user/.rvm/rubies/ruby-3.0.0/lib/ruby/site_ruby/3.0.0 extconf.rb
+checking for rb_category_warn()... yes
+checking for timezone in time.h with  -Werror... yes
+checking for altzone in time.h with  -Werror... no
+creating Makefile
+
+current directory: /home/user/Desktop/ROR/participant_tracker/vendor/bundle/ruby/3.0.0/gems/date-3.3.3/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20230622-14807-l8j43n sitelibdir\=./.gem.20230622-14807-l8j43n clean
+
+current directory: /home/user/Desktop/ROR/participant_tracker/vendor/bundle/ruby/3.0.0/gems/date-3.3.3/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20230622-14807-l8j43n sitelibdir\=./.gem.20230622-14807-l8j43n
+compiling date_core.c
+compiling date_parse.c
+compiling date_strftime.c
+compiling date_strptime.c
+linking shared-object date_core.so
+
+current directory: /home/user/Desktop/ROR/participant_tracker/vendor/bundle/ruby/3.0.0/gems/date-3.3.3/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20230622-14807-l8j43n sitelibdir\=./.gem.20230622-14807-l8j43n install
+/usr/bin/install -m 0755 date_core.so ./.gem.20230622-14807-l8j43n

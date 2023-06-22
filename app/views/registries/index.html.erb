@@ -1,0 +1,14 @@
+<h1>Registries</h1>
+<ul>
+  <% @registries.each do |registry| %>
+    <li>
+      <%= link_to registry.name, registry_path(registry) %>
+      - <%= registry.location %>
+      - <%= registry.state %>
+      <%= registry.status %>
+<%= link_to 'View Participants', registry_participants_path(registry) %>
+    </li>
+  <% end %>
+
+  <%=link_to"add the registry",new_registry_path%>
+</ul>
